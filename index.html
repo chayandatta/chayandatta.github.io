@@ -62,6 +62,22 @@ body, html {
 .btn:hover {
     background-color: RoyalBlue;
 }
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
 </style>
 <body>
 
@@ -140,8 +156,9 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
       
     <h1 class="w3-center">LIVE HTML,CSS,JS EDITOR</h1>
-    <iframe src="https://onlinehtmleditor.herokuapp.com/" height="500" width="1000"></iframe>
-   
+    <div class="iframe-container">
+        <iframe src="https://onlinehtmleditor.herokuapp.com/" frameborder="0"></iframe>
+      </div>
   </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
